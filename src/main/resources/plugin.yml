@@ -1,0 +1,11 @@
+name: SimpleBlocks
+version: '${project.version}'
+main: SimpleBlocks.SimpleBlocks
+api-version: 1.16
+commands:
+  sbsetblock:
+    description: set a block
+  sbeditblock:
+    description: edit a block
+  sbremoveblock:
+    description: remove a block
