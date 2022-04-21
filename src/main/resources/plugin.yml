@@ -1,8 +1,12 @@
 name: SimpleBlocks
 version: '${project.version}'
-main: SimpleBlocks.SimpleBlocks
+main: me.theoldduck.SimpleBlocks
 api-version: 1.16
 commands:
+  simpbleblocks:
+    description: main command
+  sbmovehere:
+    description: move a block
   sbsetblock:
     description: set a block
   sbeditblock:

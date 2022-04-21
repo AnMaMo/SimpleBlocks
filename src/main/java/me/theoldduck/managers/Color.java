@@ -1,4 +1,4 @@
-package SimpleBlocks.managers;
+package me.theoldduck.managers;
 
 import org.bukkit.ChatColor;
 

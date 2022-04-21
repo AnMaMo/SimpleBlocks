@@ -1,4 +1,4 @@
-package SimpleBlocks.managers;
+package me.theoldduck.managers;
 
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -48,21 +48,23 @@ public class FileCreator extends YamlConfiguration {
         }
     }
 
-    public void save() {
+    public Runnable save() {
         try {
             this.save(file);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
-    public void reload(){
+    public Runnable reload(){
         try{
             load(file);
         }catch (IOException | InvalidConfigurationException e){
             System.out.println("Error to reload config");
             e.printStackTrace();
         }
+        return null;
     }
 
     @Override
